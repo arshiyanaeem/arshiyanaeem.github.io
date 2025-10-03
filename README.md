@@ -9,13 +9,38 @@
 - ICS., Economics, Computer Science, Mathematics | Lahore College for Women University, Lahore, Pakistan (_2009-2011_)	
 
 ## Work Experience
-**Data Scientist @ Toyota Financial Services (_June 2022 - Present_)**
-- Uncovered and corrected missing step in production data pipeline which impacted over 70% of active accounts
-- Redeveloped loan originations model which resulted in 50% improvement in model performance and saving 1 million dollars in potential losses
+**Senior Lecturer @ University of Central Punjab, Lahore, Pakistan (_Sep 2024 - Present_)**
+- Delivering high-quality teaching, conducting innovative research, and contributing significantly to the departmental and institutional administration.
+- The role involves designing and leading advanced Computer Science modules, mentoring junior faculty, supervising postgraduate students, and maintaining an active, high-impact research program.
 
-**Data Science Consultant @ Shawhin Talebi Ventures LLC (_December 2020 - Present_)**
-- Conducted data collection, processing, and analysis for novel study evaluating the impact of over 300 biometrics variables on human performance in hyper-realistic, live-fire training scenarios
-- Applied unsupervised deep learning approaches to longitudinal ICU data to discover novel sepsis sub-phenotypes
+**Quality Circle Head (QCH) @ Department of CS & IT, Gold Campus Superior University, Lahore, Pakistan (_Aug 2021 - Sep 2024_)**
+- Responsible for maintaining the quality of undergraduate courses including Operating Systems, Logic & Architecture in the Cs & IT Department.
+- Implementing Project Based Learning PBL for Core Courses in Computer Science.
+- Ensuring the implementation and execution of updated curriculum for the courses as per Higher Education Commission Criteria (HEC), Pakistan defined Criteria.
+
+  
+
+**Entrepreneurial Instructor @ Chaudhary Muhammad Akram Center for Entrepreneurship and Development (CMACED), Lahore, Pakistan (_Aug 2021 - Sep 2024_)**
+- Deliver instruction on topics such as entrepreneurial Mindset, Ideation, Creativity, and Innovation the principles of marketing, how to operate a business, and the financial aspects of a business.
+- Tech business topics such as basic business rules and regulations for startup ideation and its phase-wise implementation, the latest trends and requirements as a software engineer in the global market, and facts about the business.
+- Deliver the skills and knowledge necessary for students to function as responsible citizens in the business world. Hold sessions and lectures at the local organization Chaudhary Muhammad Akram Center for Entrepreneurship and Development (CMACED), Lahore Pakistan.
+- Facilitating the development of consistent learner outcomes through broad attendance and steadfast participation in curricular and extracurricular committees
+- Designed lessons that demonstrate an awareness of the shifting business landscapes.
+
+
+**Coordinator Business-Head  @ Apna Microfinance Bank, Lahore, Pakistan (_Oct 2017 - March 2018_)**
+- Responsible for overseeing, integrating, and growing multiple business functions or regional operations,
+- Ensuring they align with the bank's mission of financial inclusion.
+
+Here is a detailed breakdown of the roles and responsibilities for this position, focusing on the strategic, operational, and coordination aspects typical of a Microfinance institution.
+
+**Back-end Support Executive @ Abacus Consulting, Lahore, Pakistan (_Mar 2017 - Sep 2017_)**
+- Database management, Service Request Handling, Email correspondence, Relevant Reporting
+
+**Project Developer@ The Eye Associates, Lahore, Pakistan (_May 2016 - Aug 2016_)**
+- Worked as a System Developer.
+- Developed an online EMR system for the use of clinical facilities of doctors and other health care professionals.
+ 
 
 ## Projects
 ### Data-Driven EEG Band Discovery with Decision Trees
@@ -31,6 +56,18 @@ Developed objective strategy for discovering optimal EEG bands based on signal p
 Used **Matlab** to train over 100 machine learning models which estimated particulate matter concentrations based on a suite of over 300 biometric variables. We found biometric variables can be used to accurately estimate particulate matter concentrations at ultra-fine spatial scales with high fidelity (r2 = 0.91) and that smaller particles are better estimated than larger ones. Inferring environmental conditions solely from biometric measurements allows us to disentangle key interactions between the environment and the body.
 
 ![Bike Study](/assets/img/bike_study.jpeg)
+
+
+
+## Fundings and Grants
+### "Virtual influencer” Startup
+[Publication](https://www.mdpi.com/1424-8220/22/8/3048)
+
+Developed objective strategy for discovering optimal EEG bands based on signal power spectra using **Python**. This data-driven approach led to better characterization of the underlying power spectrum by identifying bands that outperformed the more commonly used band boundaries by a factor of two. The proposed method provides a fully automated and flexible approach to capturing key signal components and possibly discovering new indices of brain activity.
+
+At SEE PAKISTAN 2024 a National Startup Championship Competition organized by Superior University, Our Startup Secured 0.2 Million Funding under the category of Ideation Stage Champion, Fazal Mohyud Din (Team Leader), Ms. Arshia Naeem (Startup Instructor), Startup: “Virtual influencer” startup is pioneering a new era of digital marketing where AI-powered virtual influencers become key players in building strong brand identities and engaging with consumers in a more personalized and impactful way, Sep 2024.
+![EEG Band Discovery](/assets/img/eeg_band_discovery.jpeg)
+
 
 ## Talks & Lectures
 - Causality: The new science of an old question - GSP Seminar, Fall 2021
