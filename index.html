@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Arshia Naeem Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <!-- <a class="navbar-brand" href="index.html">Arshia Naeem</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button> -->
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+			  <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+			  <li class="nav-item"><a href="#certificate-section" class="nav-link"><span>Certifications</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Experience</span></a></li>
+			  <li class="nav-item"><a href="#resume2-section" class="nav-link"><span>Education</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Funding & Grants</span></a></li>
+	          <li class="nav-item"><a href="#contact-section1" class="nav-link"><span>Academic Services</span></a></li>
+			</ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3" style="text-align: left"><a href="#">I'm <span><a href="#">Arshia Naeem</span></h1></a></a>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Software Engineer  ',
+						'Entrepreneurial Instructor ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>A Senior Lecturer</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.linkedin.com/in/arshia-naeem-316719165/" class="btn btn-primary py-3 px-4">Linked in</a> 
+							<a href="https://github.com/arshiyanaeem" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+                    
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Arshia Naeem</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Senior Lecturer</span></p>
+										<p><span class="title-s">Experience: </span> <span>9 Years</span></p>
+										<p><span class="title-s">Address: </span> <span>Lahore, Pakistan</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>SQL</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>PYTHON</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Data Visualization</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Statistical Analysis</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Machine Learning</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p style="text-align: justify">I'm Arshia from Pakistan. Post-graduated with distinction in MPhil degree in Computer Sciences. I have a specialization in Machine Learning and Computational Statistics. I have experience working in. Net(C#) and Machine Learning(Python). I'm also an experienced Instructor for 'Entrepreneurship Teaching and Training' by promoting the ideas of Startup and Business ventures emergence among undergraduates. My sessions are designed to overcome the gap between Industry and Academia. It also provides a road map for undergraduates to start their ventures.My Research interests span a range of topics within the field of Intelligent Systems, including Machine Learning, Computational Statistics, and their applications in various domains. I am particularly interested in developing trustworthy and explainable AI models and addressing the societal challenges, such as health care, education, and promoting sustainable development. I have multidisciplinary perspective due to my learning and work experience in diverse areas such as e-agriculture, document clustering, and entrepreneurship. I believe this will be valuable in my research endeavors. Moreover, I am eager to explore advanced techniques like deep learning, computer vision, and reinforcement learning to address the complex and emerging real-world problems 
+									</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Senior Lecturer, Entrepreneurial Instructor &amp; Software Engineer</span></li>
+									<li class="d-flex"><span> Languages:</span> <span>Java, C#, C++, SQL, ASP, PHP, Visual Basic, HTML, CSS, JavaScript,  &amp; Python</span></li>
+									<li class="d-flex"><span> Databases:</span> <span>MySQL, SQL Server, &amp;  Oracle.</span></li>
+									<li class="d-flex"><span> Document Preparation:</span> <span>LaTeX, Microsoft Word,  &amp; MS- Visio.</span></li>
+									<li class="d-flex"><span> Tools:</span> <span>PyTorch, Microsoft SQL Server, Microsoft Visual Studio, Cisco Packet Tracer, MySQL Workbench, My Eclipse10. MATLAB,  &amp; Weka,</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Master in Computer Sciences</span></li>
+									<li class="d-flex"><span>Natural Language:</span> <span>English, Urdu, Punjabi</span></li>
+		
+									<li class="d-flex"><span>Other Skills:</span> <span>Startup ideas development,Startup Marketing,Systematic Reviews, &amp; Data Engineering</span></li>
+									<li class="d-flex"><span>Interest:</span> <span> Smart Jewelry Designing, Netflixing, Listening Music and Dancing</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="30">0</span> <span>+</span>
+									<span>&nbsp; Projects & Startup ideas Supervised </span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/arshia-naeem-316719165/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<!-- <div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	
+          </div>
+        </div> -->
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2024-Present</span>
+						<h2>Senior Lecturer</h2>
+						<span class="position">Department of Computer Science, University of Central Punjab </span>
+						 
+							<ul>
+								<li> Design, develop, and deliver a range of programs of study (sometimes for entirely new courses) at various levels.</li>
+								<li> Review course content and materials regularly, updating when required.</li>
+								<li> Develop and apply appropriate teaching techniques and material, which create interest, understanding, and enthusiasm among students.</li>
+							    <li> Ensure that course design and delivery comply with the quality standards and regulations of the university and department.</li>
+							<li></li>
+              <li></li>
+              <!-- <li></li> -->
+                </ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2025-Present</span>
+						<h2>Member (Lab Evaluation Committee)</h2>
+						<span class="position">Department of Computer Science, University of Central Punjab </span>
+						<p class="mt-4"> 
+							<ul>
+								<li> Evaluate the competency, availability, and responsiveness of technical staff and the effectiveness of current maintenance procedures.</li>
+								<li> Determine necessary upgrades, expansions, or new equipment acquisitions to support evolving academic and research programs (e.g., specialized labs for AI, cybersecurity, or advanced robotics).</li>
+								<li> Ensure that the lab facilities and software are directly supporting the learning outcomes of specific Computer Science courses.</li>
+						<li> Generate a detailed evaluation report summarizing findings, highlighting successes, identifying weaknesses, and detailing specific recommendations for improvement.</li>	
+						</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+
+
+
+<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2022-2024</span>
+						<h2>Senior Lecturer</h2>
+						<span class="position">Department of CS & IT, Gold campus, Superior University </span>
+						 
+							<ul>
+								<li> Design, develop, and deliver a range of programs of study (sometimes for entirely new courses) at various levels.</li>
+								<li> Review course content and materials regularly, updating when required.</li>
+								<li> Develop and apply appropriate teaching techniques and material, which create interest, understanding, and enthusiasm among students. </li>
+							    <li> Ensure that course design and delivery comply with the quality standards and regulations of the university and department.</li>
+							<li> Taught 150+ students each semester with Computer Science core courses as per departmental allocation also the curriculum is designed on specific Project-based learning outcomes.
+							</li>
+
+							<li> Yearly 300+ Students are trained with not only the completion of coursework but the projects relevant to the assigned core courses. Almost 5-10 numbers of projects are yearly executed under my Supervision.</li>
+							<!-- <li></li> -->
+							</ul>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2021-2024</span>
+						<h2>Quality Circle Head (QCH)</h2>
+						<!-- <span class="position"></span> -->
+             <span class="position">Department of CS & IT, Gold campus, Superior University </span>
+						<p class="mt-4"> 
+							<ul>
+								<li> Responsible for maintaining the quality of undergraduate courses including Operating Systems, Logic & Architecture in the Cs & IT Department.</li>
+								<li> Implementing Project Based Learning PBL for Core Courses in Computer Science.</li>
+								<li> Ensuring the implementation and execution of updated curriculum for the courses as per Higher Education Commission Criteria (HEC), Pakistan defined Criteria.</li>
+							<li> Each semester Course learning outcomes (CLOs) mapping in almost 5 courses in 3 major departments CS, SE, and IT is ensured. </li>
+<li> The implementation of CLOs at Bloom's Taxonomy level in every assigned course is the major target.</li>
+							<li> Yearly 10 Courses and all the assessments including Midterm, Final Term exams, assignments, Quizzes, and Projects are fully mapped as per Bloom's Taxonomy level.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2021-2024</span>
+						<h2>Entrepreneurial Instructor</h2>
+						<span class="position">Chaudhary Muhammad Akram Center for Entrepreneurship and Development (CMACED), Superior University </span>
+						 
+							<ul>
+								<li> Deliver instruction on topics such as entrepreneurial Mindset, Ideation, Creativity, and Innovation the principles of marketing, how to operate a business, and the financial aspects of a business.</li>
+								<li> Tech business topics such as basic business rules and regulations for startup ideation and its phase-wise implementation, the latest trends and requirements as a software engineer in the global market, and facts about the business.</li>
+								<li> Deliver the skills and knowledge necessary for students to function as responsible citizens in the business world.</li>
+							    <li> Hold sessions and lectures at the local organization Chaudhary Muhammad Akram Center for Entrepreneurship and Development (CMACED), Lahore Pakistan.</li>
+							<li>Supervision of 70+ Students and yearly almost 140 students per semester, and trained them for startup and scale-up their entrepreneurship ideas.</li>
+							<li> From August 2021 to date 24 Startup project ideas have been executed under my supervision. The ideas are relevant to sustainable development, climate change, and meta-verse and agriculture growth Startup projects.</li>
+							
+							</ul>
+						</p>
+					</div>
+</div>
+
+
+<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2017-2018</span>
+						<h2>Coordinator Business-Head </h2>
+						<span class="position">Apna Microfinance Bank </span>
+						<li>Ensure complete compliance with all State Bank of Pakistan (SBP) prudential regulations, KYC/AML guidelines, and internal Bank policies and procedures.</li>
+<span class="date">2017</span>
+						<h2>Back-end Support Executive</h2>
+						<span class="position">Abacus Consulting  </span>
+						 
+							<ul>
+								<li> Database management.</li>
+								<li> Service Request Handling.</li>
+								<li> Email correspondence.</li>
+							    <li> Relevant Reporting.</li>
+							</ul>
+						</p>
+
+
+        
+						<span class="date">2016</span>
+						<h2>Project Developer (Internee)</h2>
+						<span class="position">The Eye Associates </span>
+						<p class="mt-4"> 
+							<ul>
+								<li> Worked as a System Developer.</li>
+								<li> Developed an online EMR system for the use of clinical facilities of doctors and other health care professionals.</li>
+								<li> A clinical system for clinical facilities of doctors and other health care professionals consists of an online EMR. The system allows one to input patient records, submit insurance claims, online surgery appointments, online clinical checkups and manage patient receivables. Java Servlet/Strus2, My-Eclipse 10 tool, MySQL Workbench.</li>
+							</ul>
+						</p>
+
+				</div>
+
+			</div>
+
+
+
+
+
+				</div>
+
+				
+      <!-- <div class="resume-wrap ftco-animate">
+						<span class="date">2017</span>
+						<h2>Back-end Support Executive</h2>
+						<span class="position">Abacus Consulting  </span>
+						 
+							<ul>
+								<li> Database management.</li>
+								<li> Service Request Handling.</li>
+								<li> Email correspondence.</li>
+							    <li> Relevant Reporting.</li>
+							</ul>
+						</p>
+					</div> -->
+
+
+
+		 <br>
+		<br> 
+
+
+
+<section class="ftco-section ftco-no-pb" id="resume2-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	
+          </div>
+        </div>
+
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2015-2017</span>
+    					<h2>Master of Science in Computer Science </h2>
+    					<span class="position"> Lahore College for Women University </span>
+    					<p class="mt-4">Grade: 3.74 out of 4.0 (Third Position & Roll of Honor).</p>
+						<p class="mt-4">Thesis Title: Development of an Efficient Hierarchal Clustering Analysis using Agglomerative Clustering Algorithm.</p>
+						<p class="mt-4"> Achievement: Published the Research article naming "Development of an efficient hierarchical clustering analysis using an agglomerative clustering algorithm." In an international journal CURRENT SCIENCE 117, no. 6 (2019).</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2011-2015</span>
+    					<h2>Bachelor of Science (Hons.) in Computer Science</h2>
+    					<span class="position">Lahore College for Women University </span>
+    					<p class="mt-4">Grade: 3.62 out of 4.0</p>
+						<p class="mt-4"> Project Title: A Web-Based Agriculture Information System</p>
+						<p class="mt-4"> Achievement: Published the Research article naming "An Integrated information system to facilitate farmers in wheat, sugarcane, and other crop diseases identification”. Pakistan Journal of Agricultural Research 29, no. 4 (2016).</p>
+					
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="file:///C:/Users/HP/Downloads/Portfolio-Website/CV%20Arshia%20(2025).pdf" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>⚡ What I've been working on</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/arshiyanaeem?tab=repositories" class="block-20 zoom-effect" style="background-image: url('images/p.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/arshiyanaeem?tab=repositories">The Book Navigator</a></h3>
+                <p>Transform the physical book browsing experience into a digitally enhanced, personalized, and efficient process</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/arshiyanaeem?tab=repositories" class="block-20 zoom-effect" style="background-image: url('images/q.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/arshiyanaeem?tab=repositories">MoodCompass using Python Project for Beginners</a></h3>
+                <p>The conceptual mental wellness and mood-tracking application, its purpose is to act as a personal guide, helping users navigate and understand their emotional landscape.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/arshiyanaeem?tab=repositories" class="block-20 zoom-effect" style="background-image: url('images/r.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/arshiyanaeem?tab=repositories">BreatheSafe</a></h3>
+                <p>An Application designed to detect smog, monitor air quality, and provide personal health alerts via a smartwatch, its core mission is to provide real-time, hyperlocal air quality intelligence to protect the user's respiratory health.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/arshiyanaeem?tab=repositories" class="block-20 zoom-effect" style="background-image: url('images/s.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/arshiyanaeem?tab=repositories">Engine Whisperer</a></h3>
+				  <p>This app would function as a sophisticated predictive maintenance and diagnostics tool, typically connecting to the vehicle's OBD-II (On-Board Diagnostics) port via a Bluetooth or Wi-Fi adapter.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/arshiyanaeem?tab=repositories" class="block-20 zoom-effect" style="background-image: url('images/t.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/arshiyanaeem?tab=repositories">Galaxy Gateway</a></h3>
+				  <p>The app's primary function would be to serve as an interactive, augmented reality (AR) guide to the night sky, translating complex astronomical data into a simple, engaging learning experience.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>
+  
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="20">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="30">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="1000">0</strong>
+                <span>Mentored Students</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="500">0</strong>
+                <span>Cups of coffee</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg);background-size: cover;background-position: center;background-repeat: no-repeat;">
+
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						<br>
+						<p><a href="https://github.com/arshiyanaeem" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+<section class="ftco-section ftco-no-pb" id="certificate-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	
+          </div>
+        </div>
+
+
+
+		<div class="row">
+			<h1 class="big-4">⚡ What I've been learning recently...</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+<div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://www.coursera.org/account/accomplishments/verify/IOJY3EF54L1X" class="block-20 zoom-effect" style="background-image: url('images/1.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://www.coursera.org/account/accomplishments/verify/IOJY3EF54L1X">Introduction to User Experience Design</a></h3>
+              
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://www.coursera.org/account/accomplishments/verify/4WPCD3SW9MUN" class="block-20 zoom-effect" style="background-image: url('images/2.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://www.coursera.org/account/accomplishments/verify/4WPCD3SW9MUN">Introduction to Systematic Review and Meta-Analysis</a></h3>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://www.coursera.org/account/accomplishments/verify/SRAC4N6SYSCU" class="block-20 zoom-effect" style="background-image: url('images/3.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://www.coursera.org/account/accomplishments/verify/SRAC4N6SYSCU">C for Everyone: Programming Fundamentals</a></h3>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://www.coursera.org/account/accomplishments/verify/6F4LRFR8XR8K" class="block-20 zoom-effect" style="background-image: url('images/4.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading"><a href="https://www.coursera.org/account/accomplishments/verify/6F4LRFR8XR8K">C for Everyone: Structured Programming</a></h3>
+				  
+				</div>
+			  </div>
+			</div>
+
+<div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://www.coursera.org/account/accomplishments/verify/1UGNJDE9TSOL" class="block-20 zoom-effect" style="background-image: url('images/5.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://www.coursera.org/account/accomplishments/verify/1UGNJDE9TSOL">C for Everyone: Programming Fundamentals</a></h3>
+                
+              </div>
+            </div>
+          </div>
+
+
+			<!-- <div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb">Customer Segmentation using clustering model</a></h3>
+				  <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div> -->
+	  	
+<!-- <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql">Digital Music Store Data Analysis using SQL</a></h3>
+                <p>Analyzed music store data using advanced SQL queires to identify gaps and increase the business growth.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb">Data Analysis using Python Project for Beginners</a></h3>
+                <p>Performed exploratory data analysis on diwali sales data using Python to improve the customer experience.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg">Power BI Sales dashboard Project for Beginners</a></h3>
+                <p>Designed a power bi dashboard for Madhav Store to track and analyze the online sales data acorss India.</p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<!-- <div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main">Sales Forecast- Time Series Forecasting</a></h3>
+				  <p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb">Customer Segmentation using clustering model</a></h3>
+				  <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
+				</div>
+			  </div>
+			</div>
+
+
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb">Customer Segmentation using clustering model</a></h3>
+				  <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
+				</div>
+			  </div>
+			</div>
+		 </div> -->
+	  </div>
+    		
+    		
+    </section>
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2"></h1>
+            <h2 class="mb-4">💰Research Funding & Grants</h2>
+            <p>Highlighting successful secured funding and grants from national technology funds for pioneering AI and startup projects, led or supervised by Me.</p>
+          </div>
+        </div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        /* Base Dark Mode Styling */
+        :root {
+            --color-dark-bg: #121212;
+            --color-card-bg: #1e1e1e;
+            --color-text-light: #ffffff;
+            --color-accent-green: #39ff14; /* Vibrant Green */
+            --color-accent-purple: #7f00ff; /* Vibrant Purple */
+            --color-border: #333333;
+        }
+
+        body {
+            background-color: var(--color-dark-bg);
+            color: var(--color-text-light);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Container for content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header Styling */
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        h1 span {
+            /* Applying the tech gradient to the key section title */
+            background: linear-gradient(90deg, var(--color-accent-green), var(--color-accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+
+        .section-intro {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+            color: #b0b0b0;
+        }
+
+        /* Funding Card Styling */
+        .funding-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            padding-top: 20px;
+        }
+
+        .funding-card {
+            background-color: var(--color-card-bg);
+            border-radius: 12px;
+            padding: 25px;
+            border-left: 5px solid var(--color-accent-green);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .funding-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+            border-left-color: var(--color-accent-purple);
+        }
+
+        .grant-title {
+            font-size: 1.5em;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: var(--color-accent-green);
+        }
+
+        .grant-source, .grant-amount {
+            font-size: 0.9em;
+            color: #b0b0b0;
+            margin-bottom: 5px;
+        }
+
+        .grant-amount {
+            color: var(--color-accent-purple);
+            font-weight: 700;
+            font-size: 1.1em;
+            margin-top: 15px;
+        }
+
+        .grant-role {
+            font-size: 0.9em;
+            margin-top: 10px;
+            color: #cccccc;
+        }
+
+        .grant-description {
+            font-size: 1em;
+            line-height: 1.5;
+            margin-top: 15px;
+            border-top: 1px dashed var(--color-border);
+            padding-top: 15px;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .funding-grid {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    
+    <div class="funding-grid">
+        
+        <div class="funding-card">
+            <p class="grant-source" ><a href="https://www.facebook.com/watch/?ref=saved&v=1227717438651823">SEE PAKISTAN 2024 National Startup Championship </p></a>
+            <h2 class="grant-title"><a href="https://www.facebook.com/watch/?ref=saved&v=1227717438651823">Virtual Influencer (Startup)</h2></a>
+            <p class="grant-amount">PKR 0.2 Million Funding (Ideation Stage Champion) </p>
+            <p class="grant-role">Role: Startup Instructor </p>
+            <p class="grant-description">
+                Pioneering a new era of digital marketing where **AI-powered virtual influencers** become key players in building strong brand identities and engaging with consumers in a more personalized and impactful way. (Sep 2024)<a href="https://github.com/arshiyanaeem?tab=repositories">[more]</a>
+            </p>
+        </div>
+        <div class="funding-card">
+            <p class="grant-source"><a href="https://ignite.org.pk/wp-content/uploads/2018/06/Shortlisted-FYPs-of-NGIRI-2023-24.pdf">2023-2024 IGNITE National Technology Fund (NGIRI)</p></a>
+            <h2 class="grant-title"><a href="https://ignite.org.pk/wp-content/uploads/2018/06/Shortlisted-FYPs-of-NGIRI-2023-24.pdf">ETMS Effortless Traffic Management System</h2></a>
+            <p class="grant-amount">Funding: In process</p>
+            <p class="grant-role">Role: Project Supervisor </p>
+            <p class="grant-description">
+                An **AI-powered solution** designed to transform urban traffic management. It reduces congestion, enhances road safety, and prioritizes emergency vehicles. Offers real-time monitoring, predictive analytics, and adaptive traffic control, making it efficient and scalable. (2023-2024)<a href="https://github.com/arshiyanaeem?tab=repositories">[more]</a>
+            </p>
+        </div>
+
+        <div class="funding-card">
+            <p class="grant-source"><a href="https://ignite.org.pk/wp-content/uploads/2018/06/Shortlisted-FYPs-of-NGIRI-2023-24.pdf">2023-2024 IGNITE National Technology Fund (NGIRI)</p></a>
+            <h2 class="grant-title"><a href="https://ignite.org.pk/wp-content/uploads/2018/06/Shortlisted-FYPs-of-NGIRI-2023-24.pdf">Dynamic Sun Tracking Solution</h2></a>
+            <p class="grant-amount">Funding: In process</p>
+            <p class="grant-role">Role: Project Supervisor</p>
+            <p class="grant-description">
+            System uses **sun-tracking technology** to optimize panel angles, maximizing energy capture and enhancing efficiency for a sustainable future.(2023-2024)<a href="https://github.com/arshiyanaeem?tab=repositories">[more]</a>
+            </p>
+        </div>
+
+        <div class="funding-card">
+            <p class="grant-source"><a href="https://ignite.org.pk/wp-content/uploads/2018/06/NGIRI-2021-22-List-of-Provisionally-shortlisted-FYPs-for-Funding.pdf">2021-20222 IGNITE National Technology Fund (NGIRI) & NSC</p></a>
+            <h2 class="grant-title"><a href="https://www.facebook.com/photo?fbid=468822771929409&set=a.357958806349140">SAGAWERE (Locomotion for Gaming)</h2></a>
+            <p class="grant-amount">PKR 10,000 (NSC) & almost $357.54 USD (NGIRI)</p>
+            <p class="grant-role">Role: Project Supervisor</p>
+            <p class="grant-description">
+            A **Metaverse game** connecting physical movement with the virtual movement of the Avatar. (2021-2022)<a href="https://github.com/arshiyanaeem?tab=repositories">[more]</a>
+            </p>
+        </div>
+
+        <div class="funding-card">
+            <p class="grant-source"><a href="https://ignite.org.pk/wp-content/uploads/2018/06/NGIRI-2021-22-List-of-Provisionally-shortlisted-FYPs-for-Funding.pdf">2021-2022 IGNITE National Technology Fund (NGIRI)</p></a>
+            <h2 class="grant-title"><a href="https://ignite.org.pk/wp-content/uploads/2018/06/NGIRI-2021-22-List-of-Provisionally-shortlisted-FYPs-for-Funding.pdf">Ever-Tracker</h2></a>
+            <p class="grant-amount">almost $357.54 USD</p>
+            <p class="grant-role">Role: Project Supervisor</p>
+            <p class="grant-description">
+            An **AI-based Interactive Game** promoting awareness and challenges about deforestation in the Pakistani Region. (2021-2022)<a href="https://github.com/arshiyanaeem?tab=repositories">[more]</a>
+            </p>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
+         
+
+		  
+   </div>
+ </section>
+
+
+
+ <section class="ftco-section contact-section ftco-no-pb" id="contact-section1">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2"></h1>
+            <h2 class="mb-4">Academic Services</h2>
+			<style>
+    /* === Base Variables (Required for Theme) === */
+    :root {
+        --color-dark-bg: #121212;
+        --color-card-bg: #1f1f1f;
+        --color-text-light: #f0f0f0;
+        --color-subtext: #a0a0a0;
+        --color-accent-green: #39ff14; /* Vibrant Green */
+        --color-accent-purple: #7f00ff; /* Vibrant Purple */
+        --color-border: #333333;
+    }
+    
+    .gradient-text {
+        background: linear-gradient(90deg, var(--color-accent-green), var(--color-accent-purple));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+    
+    .section-header {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .section-header h2 {
+        font-size: 2.5em;
+        font-weight: 800;
+    }
+
+    /* === 6. Affiliations Section Styling === */
+    .affiliations-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .affiliation-entry {
+        background-color: var(--color-card-bg);
+        padding: 30px;
+        border-radius: 10px;
+        border-left: 4px solid var(--color-accent-green);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .affiliation-entry h3 {
+        color: var(--color-accent-purple);
+        font-size: 1.6em;
+        margin-bottom: 5px;
+    }
+
+    .affiliation-role, .affiliation-org {
+        color: var(--color-text-light);
+        font-weight: 500;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .affiliation-date {
+        font-size: 0.9em;
+        color: var(--color-subtext);
+        font-style: italic;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    /* === Clickable Image Gallery Styling === */
+    .affiliation-gallery {
+        margin-top: 20px;
+        padding-top: 15px;
+        border-top: 1px solid var(--color-border);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .affiliation-gallery a {
+        display: inline-block;
+        line-height: 0; /* Important for alignment */
+    }
+
+    .affiliation-gallery img {
+        width: 100%; /* Default width for responsiveness */
+        max-width: 250px; /* Maximum size for thumbnail */
+        height: auto;
+        border-radius: 6px;
+        border: 2px solid var(--color-accent-purple);
+        transition: transform 0.2s, box-shadow 0.2s;
+        cursor: pointer;
+    }
+
+    .affiliation-gallery img:hover {
+        transform: scale(1.03);
+        box-shadow: 0 0 20px rgba(57, 255, 20, 0.6);
+        border-color: var(--color-accent-green);
+    }
+</style>
+
+<section id="affiliations" class="ftco-section contact-section ftco-no-pb">
+    <div class="container">
+
+
+        <div class="affiliations-grid">
+            
+            <div class="affiliation-entry">
+                <h3><a href="https://lcwu.edu.pk/news-archive-2025/april25/4644-entrepreneurial-expo-2-0-lcwu.html">Jury Member - Zindagi Prize & Expo 2.0</a></h3>
+                <span class="affiliation-role">‘Jury member’ for Zindagi Prize Competition & prototype Competition</span>
+                <span class="affiliation-org">K-BIC Lahore College for Women University, Pakistan</span>
+                <span class="affiliation-date">[May 2025]</span>
+                
+                <div class="affiliation-gallery">
+                    <a href="images/a.jpg" target="_blank" title="View Jury Member Image 1">
+                        <img src="images/a.jpg" alt="Arshia Naeem speaking as a Jury Member">
+                    </a>
+                    
+                    <a href="images/b.jpg" target="_blank" title="View Jury Member Image 2">
+                        <img src="images/b.jpg" alt="Jury panel at Entrepreneurial Expo 2.0">
+                    </a>
+                    
+                    <a href="images/c.jpg" target="_blank" title="View Jury Member Image 3">
+                        <img src="images/c.jpg" alt="Jury members listening to presentation">
+                    </a>
+                </div>
+            </div>
+
+           
+
+
+<div class="affiliation-entry">
+                <h3><a href="https://www.facebook.com/kbiclcwu.official/photos/3-day-pre-incubation-bootcamp-has-been-arranged-for-cohort-ii-by-khadija-tul-kub/517378571239424/?_rdr">Trainer and Mentor - Pre-Incubation Bootcamp</a></h3>
+                <span class="affiliation-role">‘3-Day Pre-Incubation Bootcamp for Cohort II’</span>
+                <span class="affiliation-org">K-BIC Lahore College for Women University, Pakistan</span>
+                <span class="affiliation-date">[Sep 2024]</span>
+                <div class="affiliation-gallery">
+                   
+					<a href="images/f.jpg" target="_blank" title="View Training Photo 2">
+                        <img src="images/f.jpg" alt="Group photo from Bootcamp">
+                    </a>
+                    <a href="images/e.jpg" target="_blank" title="View Training Photo 2">
+                        <img src="images/e.jpg" alt="Group photo from Bootcamp">
+                    </a>
+
+ <a href="images/d.jpg" target="_blank" title="View Training Photo 1">
+                        <img src="images/d.jpg" alt="Trainer and Mentor session photo">
+                    </a>
+					
+
+                </div>
+            </div>
+
+
+ <div class="affiliation-entry">
+                <h3><a href="https://www.linkedin.com/pulse/day-2-entrepreneurial-expo-10-lcwu-2024-kbiclcwu-zbzdc/">Jury Member - Expo 1.0</a></h3><span class="affiliation-role">‘Jury Member at Expo 1.0’</span>
+                <span class="affiliation-org">K-BIC Lahore College for Women University, Pakistan</span>
+                <span class="affiliation-date">[May 2024]</span>
+                <div class="affiliation-gallery">
+                    <a href="images/g.jpg" target="_blank" title="View Training Photo 1">
+                        <img src="images/g.jpg" alt="Trainer and Mentor session photo">
+                    </a>
+                    
+                </div>
+            </div>
+
+
+			<div class="affiliation-entry">
+                <h3><a href="https://lcwu.edu.pk/news-archive-2024/january-25/3998-k-bic-lcwu-hosts-hult-prize-idea-competition.html">Jury Member - Hult Prize Idea Competition </a></h3><span class="affiliation-role">‘Jury Member at Hult Prize Idea Competition </span>
+                <span class="affiliation-org">K-BIC Lahore College for Women University, Pakistan</span>
+                <span class="affiliation-date">[Feb 2024]</span>
+                <div class="affiliation-gallery">
+                    
+                    <a href="images/g1.jpeg" target="_blank" title="View Training Photo 2">
+                        <img src="images/g1.jpeg" alt="Group photo from Bootcamp">
+                    </a>
+
+                    <a href="images/g2.jpeg" target="_blank" title="View Training Photo 2">
+                        <img src="images/g2.jpeg" alt="Group photo from Bootcamp">
+                    </a>
+                </div>
+            </div>
+
+<div class="affiliation-entry">
+                <h3 ><a href="https://www.lcwu.edu.pk/news-aug2020/3886-k-bic-successfully-conducted-3-days-technopreneurship-training-2.html">Trainer and Mentor - Pre-Incubation Bootcamp</h3></a>
+                <span class="affiliation-role">‘3-Day Pre-Incubation Bootcamp for Cohort I’</span>
+                <span class="affiliation-org">K-BIC Lahore College for Women University, Pakistan</span>
+                <span class="affiliation-date">[Jan 2024]</span>
+                <div class="affiliation-gallery">
+                    <a href="images/h.jpg" target="_blank" title="View Training Photo 1">
+                        <img src="images/h.jpg" alt="Trainer and Mentor session photo">
+                    </a>
+                    <a href="images/i.jpg" target="_blank" title="View Training Photo 2">
+                        <img src="images/i.jpg" alt="Group photo from Bootcamp">
+                    </a>
+                </div>
+            </div>
+
+			
+ <div class="affiliation-entry">
+                <h3><a href="https://www.facebook.com/photo?fbid=494099383602941&set=pcb.494101943602685">Guest Lecturer & Trainer - Freshman Program sessions</a></h3>
+                <span class="affiliation-role">Trainer for boosting 𝐄𝐧𝐭𝐫𝐞𝐩𝐫𝐞𝐧𝐞𝐮𝐫𝐢𝐚𝐥 𝐌𝐢𝐧𝐝𝐬𝐞𝐭 𝐢𝐧 𝐀𝐜𝐭𝐢𝐨𝐧</span>
+                <span class="affiliation-org">CMACED (Chaudhry Muhammad Akram Center for Entrepreneurship Development) in partnership with Venture Cup Denmark</span>
+                <span class="affiliation-date">[2024]</span>
+                 <div class="affiliation-gallery">
+                    <a href="images/j.jpg" target="_blank" title="View Evaluator Photo">
+                        <img src="images/j.jpg" alt="Photo from NSC'22 Event">
+                    </a>
+
+					<a href="images/k.jpg" target="_blank" title="View Evaluator Photo">
+                        <img src="images/k.jpg" alt="Photo from NSC'22 Event">
+                    </a>
+                </div>
+            </div>
+
+			<div class="affiliation-entry">
+                <h3><a href="https://www.facebook.com/photo/?fbid=243505648662317&set=pcb.243508025328746">Guest Lecturer & Trainer - Freshman Program sessions</a></h3>
+                <span class="affiliation-role">Trainer for boosting 𝐄𝐧𝐭𝐫𝐞𝐩𝐫𝐞𝐧𝐞𝐮𝐫𝐢𝐚𝐥 𝐌𝐢𝐧𝐝𝐬𝐞𝐭 𝐢𝐧 𝐀𝐜𝐭𝐢𝐨𝐧 </span>
+                <span class="affiliation-org">CMACED (Chaudhry Muhammad Akram Center for Entrepreneurship Development) in partnership with Venture Cup Denmark</span>
+                <span class="affiliation-date">[2023]</span>
+                 <div class="affiliation-gallery">
+                    <a href="images/l.jpg" target="_blank" title="View Evaluator Photo">
+                        <img src="images/l.jpg" alt="Photo from NSC'22 Event">
+                    </a>
+
+					<a href="images/m.jpg" target="_blank" title="View Evaluator Photo">
+                        <img src="images/m.jpg" alt="Photo from NSC'22 Event">
+                    </a>
+                </div>
+            </div>
+
+
+             <div class="affiliation-entry">
+                <h3><a href="https://www.facebook.com/photo/?fbid=266688479677367&set=pcb.266691153010433">Evaluator - National Startup Competition (NSC'22)</a></h3>
+                <span class="affiliation-role">Evaluator in NSC'22</span>
+                <span class="affiliation-org">CMACED (Chaudhry Muhammad Akram Center for Entrepreneurship Development) in partnership with Venture Cup Denmark</span>
+                <span class="affiliation-date">[2022]</span>
+                 <div class="affiliation-gallery">
+                    <a href="images/n.jpg" target="_blank" title="View Evaluator Photo">
+                        <img src="images/n.jpg" alt="Photo from NSC'22 Event">
+                    </a>
+                </div>
+            </div>
+
+
+<div class="affiliation-entry">
+                <h3><a href="https://cmaced.com/entrepreneurial-teaching-training-program/">Judge and Evaluator in Initial Screening Round (ISR) - Entrepreneurial Teaching and Training Program (ETTP)</a> </h3>
+                <span class="affiliation-role">Evaluating business/startup ideas</span>
+                <span class="affiliation-org">CMACED (Chaudhry Muhammad Akram Center for Entrepreneurship Development)</span>
+                <span class="affiliation-date">[March 2022]</span>
+                 <div class="affiliation-gallery">
+                    <a href="images/o.jpg" target="_blank" title="View Evaluator Photo">
+                        <img src="images/o.jpg" alt="Photo from NSC'22 Event">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>	  
+   </div>
+ </section>
+
+
+
+
+<div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Find <span> me  </span></h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+	
+					  <li class="ftco-animate"><a href="#"><span class="icon-youtube"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/arshia-naeem-316719165/"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.facebook.com/profile.php?id=100005343197874"><span class="icon-facebook"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/arshyanaeem/"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+
+
+
+  
+  </body>
+</html>
